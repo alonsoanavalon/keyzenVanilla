@@ -1,0 +1,248 @@
+.main {
+    text-align: center;
+
+    width:80%;
+    max-width:700px;
+    min-width:360px;
+    margin:0 auto;
+}
+/* MAIN */
+
+.svg-desktop-container {
+
+    width:350px;
+    margin:0 auto;
+    margin-top:6rem;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;;
+}
+
+.svg-desktop {
+    
+    width:270px;
+    height:auto;
+    margin:0 auto;
+    margin-left:5rem;
+
+   
+}
+
+.titles {
+    margin-bottom:4rem;
+    line-height: .25rem;
+    position: absolute;
+    top:0;
+    left:0;
+
+    .title-hello {
+        font-family: $franklin;
+        font-weight: bold;
+        font-size: $title-size;
+        width:150px;
+        margin:0;
+        padding:0;
+    }
+    .subtitle-developer {
+        font-family: $poppins;
+        font-weight: bold;
+        font-size: $font-size;
+        color:$grey-color;
+        margin-bottom:1rem;
+    }
+}
+
+/* About */
+
+.about{
+    .title-about {
+        font-size: $title-size;
+        color:$black-font;
+        font-family: $franklin;
+        font-weight: bold;
+        margin:3rem 0;
+    }
+    .info-about {
+        font-family: $poppins;
+        font-size: $font-size;
+        text-align: start;
+        line-height:1.5rem;
+    }
+}
+
+
+/* Interests */
+.interests {
+
+    .title-interests {
+        color:$purple-color;
+        font-family: $franklin;
+        font-weight: bold;
+        font-size: $subtitle-size;
+        margin:4rem 0 2rem 0;
+    }
+    .container-interests {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+ 
+        flex-direction: column;
+        margin-bottom:2rem;
+
+    }
+
+    .interest {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:.5rem 0;
+
+        p {
+            display: inline-block;
+            padding-left:1rem;
+            font-family: $poppins;
+            font-weight: lighter;
+            font-size: $font-size;
+  
+        }
+
+        .music-info {
+
+            margin-right:2rem;
+        }
+
+    
+    }
+
+   
+
+}
+
+.now {
+    .now-info {
+        font-family: $poppins;
+        font-size: $font-size;
+        line-height:1.5rem;
+        text-align: start;
+    }
+}
+#technology-svg,
+#learning-svg,
+#music-svg {
+    width:40px;
+    height:auto;
+}
+
+
+#music-svg {
+    margin-right:.2rem;
+
+}
+/* Proyects */
+
+.proyects {
+   
+    .title-proyects{
+        font-family: $franklin;
+        font-weight: bold;
+        font-size: $title-size;
+        margin:3rem 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .proyect-card{
+            margin:1.5rem 0;
+            width:250px;
+            height:100px;
+            box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+    }
+}
+.svg-notebook {
+    margin-top:5rem;
+    width:300px;
+    height:auto;
+}
+
+/* Contacto */
+.contacto {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin-top: 2rem; }
+  .contacto h3 {
+    font-size: $title-size;
+    padding: 1rem 0 1.5rem 0;
+    color: $black-font;
+    font-family: $franklin;
+    font-weight: bold;
+}
+
+.container-contact {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center; }
+
+.container-contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  color: #fff; }
+
+.container-contact__form > h4 {
+  letter-spacing: 1px;
+  padding: 10px; }
+
+form {
+  width: 100%; }
+
+.container-contact__form > input,
+.container-contact__form > textarea,
+#submit {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #000;
+  border-style: none;
+  border-bottom: thin solid #ccc;
+  background-color: $white-color;
+  outline: none;
+  font-family: $poppins;
+  font-size: $font-size;
+}
+
+.container-contact__form > textarea {
+  min-height: 200px;
+  max-height: 600px;
+  max-width: 700px;
+  min-width: 300px; }
+
+#submit {
+  width: 100px;
+  background-color: $purple-color;
+  color:$white-color;
+  font-weight: bold;
+}
+
+label {
+  margin-right: auto; }

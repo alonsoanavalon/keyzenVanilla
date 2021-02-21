@@ -1,0 +1,20 @@
+body {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template:"main-image"
+                  "main"
+                  "footer";
+}
+
+.main-image {
+    grid-area: main-image;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
