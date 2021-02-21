@@ -24,14 +24,14 @@
     <div class="main-image">
         <header class="header">
             <nav class="nav">
-                <a href="acerca.html">
+                <a href="#acerca">
                     Acerca
                 </a>
-                <a href="proyectos.html">
+                <a href="#proyectos">
                     Proyectos
                 </a>
-                <a href="servicios.html">
-                    Servicios
+                <a href="#contacto">
+                    Contacto
                 </a>
             </nav>
         </header>
@@ -53,15 +53,34 @@
             <img src="https://res.cloudinary.com/keyzen/image/upload/v1613855011/svgDesktopPSD_fgphus.png" alt="desktop-image" class="svg-desktop">
         </div>
         
-        <section class="about">
+        <section id="acerca"class="about">
             <h2 class="title-about">
-                Acerca
+                Acerca de mí
             </h2>
             <p class="info-about">
-                Soy un apasionado por el mundo digital, actualmente estoy realizando proyectos de desarrollo tanto en aplicaciones como  páginas web.
+                Soy un apasionado por el mundo digital, desde pequeño me he visto atraído por la computación, pero no fue hasta el año 2020 que me decidí por aprender <b>programación</b>, antes de eso no tuve acercamiento a este increible arte <i>(a pesar de irónicamente pasar mucho tiempo con computadores)</i>
+      
+   
+                
+
+            </p>
+
+            <p class="info-about">
+                Antes de convertirme en desarrollador, me gradué de <i>Analista en políticas y asuntos internacionales</i> ya que la política, la historia y el cómo funcionaba el mundo en estos términos era algo muy interesante desde mi punto de vista.
+            </p>
+
+            <p class="info-about">
+
+                Dentro de las cosas que aprendí, comencé a leer sobre <b>ciberseguridad</b> y las implicaciones que podría tener para el mundo, considerando la gran cantidad de dispositivos electrónicos que existen en el planeta. 
+                
+       
+
             </p>
             <p class="info-about">
-                Me encuentro en constante aprendizaje de nuevas y emergentes tecnologías para realizar trabajos de mejor calidad.
+                Desde ese momento me di cuenta que para especializarme en esta área tendría que entrar en el maravilloso mundo de la web, y comenzar desde lo más básico, aprender un lenguaje de programación y comenzar mis primeros proyectos.
+            </p>
+            <p class="info-about">
+                Me encuentro en constante aprendizaje de nuevas tecnologías <i>(hay demasiadas)</i> para poder conseguir crear los proyectos que tengo en mente y que tengan la calidad que espero.
             </p>
         </section>
         
@@ -106,44 +125,62 @@
 
         <div class="now">
             <p class="now-info">
-                Actualmente estoy realizando proyectos en el frontend y en el backend con <b>Node.js</b> ya que me gusta poder realizar aplicaciones y sitios web de manera integral, poder tener control sobre todo el desarrollo. 
+                Actualmente estoy realizando proyectos en el frontend y estoy comenzando a construir aplicaciones desde el backend con <b>Node.js</b> ya que me gusta poder tener un mayor control sobre los sitios web y aplicaciones que realizo, de esa forma puedo trabajar de la manera que prefiera y volcar de una manera mas precisa lo que tengo en mi mente.
             </p>
             <p class="now-info">
-                Tengo interés en aprender desarrollo de aplicaciones móviles y ciberseguridad.         
+                Estoy interesado en mantenerme aprendiendo sobre desarrollo para generar productos y servicios de mayor calidad. 
+            </p>
+            <p class="now-info">
+                En la actualidad estoy realizando proyectos web, pero tengo interés en aprender sobre ciberseguridad y desarrollo móvil ya que creo esta última es una plataforma maravillosa para desarrollar, considerando la cantidad de personas que actualmente poseen un dispositivo móvil.
+            </p>
+
+            <p class="now-info">
+                Desde siempre me ha gustado mantenerme aprendiendo sobre nuevas cosas que otorguen un punto de vista diferente, que me ayuden a tener una visión mas amplia de las cosas y creo que el mundo del desarrollo calza perfecto para mí en este sentido.
+            </p>
+
+            <p class="now-info">
+                Además de interesarme por el aprendizaje y la tecnología, dentro de mis aficiones se encuentra la música, desde pequeño estuve cerca de la guitarra y me he mantenido tocando durante los años, creo que es necesaria para mantener mi mente en calma y poder liberar tensiones en esos días más agitados.
             </p>
         </div>
 
-        <section class="proyects">
-
+        <section id="proyectos" class="proyects">
             <h2 class="title-proyects">Proyectos</h2>
-
-            <div class="cards">
-                <div class="proyect-card">
-
+            <div class="container-proyects">
+                <div class="cards">
+                    <div class="proyect-card">
+                        <a href="https://hqgray.cl"><img src="https://res.cloudinary.com/keyzen/image/upload/v1613882221/pexels-negative-space-134577_3_dbd8wo.png" alt=""></a>
+              
+                    </div>
+                    <div class="proyect-card">
+                        <a href="https://milcocafe.web.app/"><img src="https://res.cloudinary.com/keyzen/image/upload/v1613882221/pexels-negative-space-134577_5_sbwx6f.png" alt=""></a>
+                 
+                    </div>
+                    <div class="proyect-card">
+                        <a href="">
+                            <img src="https://res.cloudinary.com/keyzen/image/upload/v1613882220/pexels-negative-space-134577_4_kl3iwq.png" alt="">
+                        </a>
+                    </div>
+        
                 </div>
-                <div class="proyect-card">
-    
-                </div>
-                <div class="proyect-card">
-    
-                </div>
-    
-            </div>
-
+                
             <img src="https://res.cloudinary.com/keyzen/image/upload/v1613855843/computerPSD_d8uovc.png" alt="svg-notebook" class="svg-notebook">
+            </div>
+  
+
+
+
         </section>
        
-        <section class="contacto">
-            <h3>Contáctanos</h3>
+        <section id="contacto"class="contacto">
+            <h3>Contáctame</h3>
             <div class="container-contact">
                 <form class="container-contact__form" id ="contact-form" action="correo.php" method="POST">  
-                            <label>Nombre</label>
+                
                             <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required> 
-                            <label>Email</label>
+            
                             <input type="email" name="email" id="email" placeholder="Ingrese su correo" required>
-                            <label>Asunto</label>
+    
                             <input type="text" name="asunto" id="asunto" placeholder="Asunto" required>
-                            <label>Mensaje</label>
                             <textarea name="mensaje" id="textarea" placeholder="Escriba su mensaje..." required></textarea>
                             <input type="submit" id="submit" value="Enviar">
                 </form> 
@@ -153,34 +190,39 @@
     </main>
 
     <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="explore">
+                <h3 class="explore-title">
+                    Explora
+                </h3>
+                <a href="#acerca">
+                    Acerca
+                </a>
+                <a href="#proyectos">
+                    Proyectos
+                </a>
+                <a href="#contacto">
+                    Contacto
+                </a>
+            </div>
+    
+            <div class="follow">
+                <h3 class="follow-title">
+                    Sígueme
+                </h3>
+                <a href="https://github.com/k3yzen">
+                    <i id="github-icon" class="fab fa-github"></i>
+                </a>
+                <a href="https://instagram.com/keyzen.cl">
+                    <i id="instagram-icon" class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
         
-        <div class="explore">
-            <h3 class="explore-title">
-                Explora
-            </h3>
-            <a href="about">
-                Acerca
-            </a>
-            <a href="proyects">
-                Proyectos
-            </a>
-            <a href="services">
-                Servicios
-            </a>
-        </div>
-
-        <div class="follow">
-            <h3 class="follow-title">
-                Sígueme
-            </h3>
-            <a href="https://github.com/k3yzen">
-                <i id="github-icon" class="fab fa-github"></i>
-            </a>
-            <a href="https://instagram.com">
-                <i id="instagram-icon" class="fab fa-instagram"></i>
-            </a>
-        </div>
-
+        <p class="copyright"><i class="far fa-copyright"></i>Keyzen 2021 </p>
     </footer>
     
 </body>

@@ -1,20 +1,263 @@
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-
-
-    
-}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
+    /* main image */
 
+
+    .main-image{
+        
+        height:500px;
+    }
+
+
+    /* desktop */
+
+    .svg-desktop-container {
+        margin-top:6rem;
+        padding:0;
+        width:650px;
+
+        .svg-desktop {
+        
+            width:500px;
+            height:auto;
+            margin:0 auto;
+            margin-right:2rem;
+
+        
+           
+        }
+
+        .titles {
+            margin-bottom:4rem;
+      
+
+            top:2rem;
+            left:2rem;
+        
+            .title-hello {
+
+                font-size: $title-tablet;;
+                width:200px;
+
+            }
+            .subtitle-developer {
+
+                font-size: $font-tablet;
+                margin-bottom:1rem;
+            }
+        }
+    }
+
+    /* main fonts */
+
+    .about {
+        .title-about {
+            font-size: $title-tablet;
+            margin:4rem 0;
+        }
+        .info-about {
+            font-size: $font-tablet;
+        }
+    }
+
+    .interests {
+        margin:4rem 0;
+        .title-interests {
+            margin:6rem 0;
+            font-size: $title-tablet;
+        }
+        .interest {
+            p {
+                font-size: $font-tablet;
+            }
+        }
+    }
+
+    .now {
+        .now-info {
+            font-size: $font-tablet;
+        }
+    }
+
+    .proyects {
+        margin:4rem 0;
+        .title-proyects {
+            font-size: $title-tablet;
+        }
+    }
+
+    .contacto {
+        h3 {
+            font-size: $title-tablet;
+        }
+    }
     
+    .footer {
+        .explore {
+            .explore-title {
+                font-size: $title-tablet;
+            }
+            a {
+                font-size: $font-tablet;
+            }
+        }
+
+        .follow {
+            a {
+                font-size: $font-tablet;
+            }
+        }
+    }
+
+    .container-contact__form > textarea {
+        min-height: 200px;
+        max-height: 600px;
+        width:100%;
+        min-width:500px;
+        max-width:700px;
+      
+      }
+ 
+
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 
+    /* main image */
+
+
+    .main-image{
+        height:700px;
+    }
+
+    .main {
+        max-width:900px;
+    }
+
+    .header {
+
+        margin:2rem auto 0;
+        .nav {
+            text-align: center;
+            width:580px;
+            margin:0 auto;
+    
+            a {
+                text-decoration: none;
+                padding:0 1.5rem;
+                color:$white-font;
+                font-size: 1.25rem;
+                font-family: $poppins;
+                font-weight: bold;
+                text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+
+    .wolf {
+        width:140px;
+    }
+    .main-title {
+        left:8rem;
+        font-size: 2.2rem;
+    }
+
+
+    /* desktop */
+
+    .svg-desktop-container {
+        
+        padding:0;
+        width:850px;
+
+        .svg-desktop {
+        
+            width:700px;
+            height:auto;
+            margin:0 auto;
+            margin-right:0rem;
+
+        
+           
+        }
+
+        .titles {
+            margin-bottom:4rem;
+      
+
+            top:3rem;
+            left:6rem;
+        
+        }
+    }
+
+    .proyects {
+        .container-proyects {
+        
+            flex-direction: row;
+
+            .svg-notebook {
+                margin-left:6rem;
+                width:450px;
+            }
+            
+            .cards {
+                .proyect-card {
+                    width:300px;
+                    position: relative;
+                    img {
+                        width:250px;
+                        position:absolute;
+                        left:0;
+                        right:0;
+                        bottom:0;
+                        top:0;
+                        margin: auto;
+                    }
+                }
+
+            }
+
+        }
+
+
+
+
+
+        
+    }
+
+    .footer {
+
+        .footer-container{
+            flex-direction: row;
+            justify-content: center;
+    
+            div {
+                margin:0 8rem;
+            }
+    
+            .follow {
+                margin-top:0;
+            }
+        }
+    }
+
+    .contacto {
+        margin-bottom:6rem;
+    }
+
+    .container-contact__form > textarea {
+        min-height: 200px;
+        max-height: 600px;
+        width:100%;
+        min-width:600px;
+        max-width:900px;
+      
+    }
 
     
 }
@@ -22,6 +265,129 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
+    .wolf {
+        width:180px;
+    }
+    .main-title {
+        left:10rem;
+        font-size: 2.5rem;
+    }
 
+    .about,
+    .interests,
+    .proyects {
+        margin:6rem 0;
+    }
+
+    .main-image{
+        height:700px;
+    }
+
+    .main {
+        max-width:1200px;
+    }
+
+    .svg-desktop-container {
+
+        .titles {
+            margin-bottom:4rem;
+            margin-left:-2rem;
+      
     
+            top:2rem;
+            left:2rem;
+        
+            .title-hello {
+    
+                font-size: $title-desktop;;
+                width:400px;
+    
+            }
+            .subtitle-developer {
+    
+                font-size: $font-desktop;
+                margin-bottom:1rem;
+            }
+        }
+    }
+
+    .about {
+        .title-about {
+            font-size:$title-desktop;
+            
+        }
+        .info-about {
+            font-size: $font-desktop;
+            line-height:1.8rem;
+        }
+    }
+
+    .interests {
+        .title-interests {
+            font-size: $title-desktop;
+        }
+
+        .container-interests {
+            p {
+                font-size: $font-desktop;
+            }
+        }
+    }
+
+    .now {
+        .now-info {
+            font-size: $font-desktop;
+            line-height:1.8rem;
+        }
+    }
+
+    .proyects {
+        .title-proyects {
+            font-size: $title-desktop;
+        }
+
+
+    }
+
+    .contacto {
+        h3 {
+            font-size: $title-desktop;
+        }
+    }
+
+    .footer{
+        .footer-container{
+            .explore {
+                h3 {
+                    font-size: $title-desktop;
+                }
+                a{
+                    font-size: $font-desktop;
+          
+                }
+            }
+
+            .follow {
+                text-align: center;
+                h3 {
+                    font-size: $title-desktop;
+                }
+                a{
+                    font-size: $font-desktop;
+          
+                }
+            }
+        }
+    }
+
+    .container-contact__form > textarea {
+        min-height: 200px;
+        max-height: 600px;
+        width:100%;
+        min-width:800px;
+        max-width:1100px;
+      
+      }
+
+
 }

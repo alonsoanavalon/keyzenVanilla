@@ -1,7 +1,11 @@
 @import 'normalize';
 @import 'variables';
 @import 'layout';
-@import 'mediaqueries';
 @import 'main-image';
 @import 'main';
-@import 'footer'
+@import 'footer';
+@import 'mediaqueries';
+
+* {
+    scroll-behavior: smooth;
+}
