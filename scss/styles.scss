@@ -8,4 +8,54 @@
 
 * {
     scroll-behavior: smooth;
+   
 }
+
+.main {
+    overflow-x: hidden;
+}
+
+
+
+.hidden-notebook {
+    visibility:hidden;
+    opacity:0;
+    transform: translateX(80%);
+
+}
+
+
+.show-notebook {
+    opacity:1;
+    visibility: visible;
+    transform:translateX(0);
+    transition:transform .8s ease, opacity .6s ease;
+}
+
+
+.hidden-desktop {
+    opacity:0;
+    visibility: hidden;
+    transform:translateX(-60%)
+}
+
+.show-desktop {
+    opacity:1;
+    transform:translateX(0);
+    visibility: visible;
+    transition:transform 1s ease, opacity .6s ease;
+}
+
+.hidden-developer {
+    opacity:0;
+    visibility: hidden;
+    overflow-x: hidden;
+}
+
+.show-developer {
+    opacity:1;
+
+    visibility: visible;
+    transition:opacity 3s ease;
+}
+
