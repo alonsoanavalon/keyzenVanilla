@@ -1,10 +1,48 @@
 .main {
     text-align: center;
-
+    position: relative;
     width:80%;
-    max-width:700px;
     min-width:360px;
     margin:0 auto;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom:1rem;
+    right: 1rem;
+    text-decoration: none;
+    border:none;
+    background-color: transparent;
+    color:green;
+    outline: none;
+    padding:.4rem;
+    margin:0;
+    z-index:10;
+
+
+    cursor: pointer;
+
+    .whatsapp-icon {
+        font-size: 2.5rem;
+        display: absolute;
+        text-decoration: none;
+    }
+    .whatsapp-icon:active,
+    .whatsapp-icon:visited,
+    .whatsapp-icon:link {
+        text-decoration: none;
+        color:green;
+    }
+
+
+}
+
+
+.whatsapp:active,
+.whatsapp:visited,
+.whatsapp:link {
+    text-decoration: none;
+    color:green;
 }
 /* MAIN */
 
@@ -153,6 +191,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom:3rem;
+        
     }
    
     .title-proyects{
@@ -181,14 +221,26 @@
             bottom:0;
             top:0;
             margin: auto;
-            transition:transform .2s ease-in-out;
+ 
         }
 
-        img:hover {
-            transition:transform .2s ease-out;
-            transform: translateY(-1rem);
-        }
+
     }
+
+    .btn-more {
+
+        text-decoration: none;
+        padding:.5rem 1rem;
+        background-color: $purple-color;
+        border-radius: .5rem;
+        color:$white-color;
+        font-family: $poppins;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+}
+
 }
 .svg-notebook {
     margin-top:5rem;
@@ -259,8 +311,8 @@ form {
 .container-contact__form > textarea {
   min-height: 200px;
   max-height: 600px;
-  max-width:350px;
-  min-width:300px;
+  width:100%;
+  max-width:400px;
 
 }
 

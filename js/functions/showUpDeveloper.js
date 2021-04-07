@@ -9,8 +9,7 @@ export default function showUpDeveloper (hidden, show, element) {
     
     w.addEventListener("scroll", () => {
         const elementTop = $element.getBoundingClientRect().top;
-        console.log(windowHeight + "window Height")
-        console.log(elementTop + "elementTop")
+
         if (elementTop < windowHeight) {
             $element.classList.remove(hidden)
             $element.classList.add(show) 

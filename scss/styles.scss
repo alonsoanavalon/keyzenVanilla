@@ -4,7 +4,9 @@
 @import 'main-image';
 @import 'main';
 @import 'footer';
+@import 'services';
 @import 'mediaqueries';
+
 
 * {
     scroll-behavior: smooth;
@@ -30,6 +32,10 @@
     visibility: visible;
     transform:translateX(0);
     transition:transform .8s ease, opacity .6s ease;
+    -webkit-transition:transform .8s ease, opacity .6s ease;
+    -moz-transition:transform .8s ease, opacity .6s ease;
+    -ms-transition:transform .8s ease, opacity .6s ease;
+    -o-transition:transform .8s ease, opacity .6s ease;
 }
 
 

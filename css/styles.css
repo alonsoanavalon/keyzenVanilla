@@ -329,12 +329,15 @@ body {
 .header {
   margin: 2rem auto 0; }
   .header .nav {
-    text-align: center;
-    width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     margin: 0 auto; }
     .header .nav a {
       text-decoration: none;
-      padding: 0 1.5rem;
+      padding: 0 .8rem;
       color: #F7F7FE;
       font-size: 1rem;
       font-family: "Poppins", sans-serif;
@@ -349,11 +352,12 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  margin: auto; }
+  margin: auto;
+  filter: drop-shadow(0px 5px 5px #000001); }
 
 .main-title {
   display: block;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   width: 90px;
   height: 30px;
   font-family: "Libre Franklin", sans-serif;
@@ -367,10 +371,39 @@ body {
 
 .main {
   text-align: center;
+  position: relative;
   width: 80%;
-  max-width: 700px;
   min-width: 360px;
   margin: 0 auto; }
+
+.whatsapp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: green;
+  outline: none;
+  padding: .4rem;
+  margin: 0;
+  z-index: 10;
+  cursor: pointer; }
+  .whatsapp .whatsapp-icon {
+    font-size: 2.5rem;
+    display: absolute;
+    text-decoration: none; }
+  .whatsapp .whatsapp-icon:active,
+  .whatsapp .whatsapp-icon:visited,
+  .whatsapp .whatsapp-icon:link {
+    text-decoration: none;
+    color: green; }
+
+.whatsapp:active,
+.whatsapp:visited,
+.whatsapp:link {
+  text-decoration: none;
+  color: green; }
 
 /* MAIN */
 .svg-desktop-container {
@@ -469,7 +502,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 3rem; }
 .proyects .title-proyects {
   font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
@@ -493,11 +527,18 @@ body {
     right: 0;
     bottom: 0;
     top: 0;
-    margin: auto;
-    transition: transform .2s ease-in-out; }
-  .proyects .cards img:hover {
-    transition: transform .2s ease-out;
-    transform: translateY(-1rem); }
+    margin: auto; }
+.proyects .btn-more {
+  text-decoration: none;
+  padding: .5rem 1rem;
+  background-color: #9947FF;
+  border-radius: .5rem;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem; }
 
 .svg-notebook {
   margin-top: 5rem;
@@ -566,8 +607,8 @@ form {
 .container-contact__form > textarea {
   min-height: 200px;
   max-height: 600px;
-  max-width: 350px;
-  min-width: 300px; }
+  width: 100%;
+  max-width: 400px; }
 
 #submit {
   width: 100px;
@@ -619,6 +660,141 @@ label {
       .footer .footer-container .follow #github-icon {
         font-size: 2rem; }
 
+#main-services {
+  max-width: 1900px;
+  width: 90%; }
+  #main-services #contacto {
+    max-width: 1100px; }
+
+.pricing-container {
+  background: #fafafa;
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.25);
+  padding: 5rem 0 10rem 0;
+  margin: 4rem 0;
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem; }
+  .pricing-container .pricing-titles {
+    width: 300px;
+    margin: 5rem auto;
+    text-align: center; }
+  .pricing-container h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.15rem; }
+  .pricing-container p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    line-height: 2rem; }
+  .pricing-container .pricing-contact {
+    text-decoration: none;
+    background-color: #9947FF;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    color: #FFFFFF;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem; }
+
+.pricing-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif; }
+  .pricing-cards .list-ticket {
+    list-style: none;
+    line-height: 3rem; }
+    .pricing-cards .list-ticket img {
+      width: 20px; }
+  .pricing-cards .list-star {
+    list-style: none;
+    line-height: 3rem; }
+    .pricing-cards .list-star img {
+      width: 20px; }
+  .pricing-cards .ecommerce h3 {
+    border-bottom: 3px solid #0071BC; }
+  .pricing-cards .ecommerce-pro h3 {
+    border-bottom: 3px solid #9947FF; }
+  .pricing-cards .informative h3 {
+    border-bottom: 3px solid #68E1FD; }
+  .pricing-cards .pricing-card {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+    background-color: #FFFFFF;
+    padding-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem; }
+    .pricing-cards .pricing-card h3 {
+      padding: 1rem 0;
+      color: #333; }
+    .pricing-cards .pricing-card ul {
+      display: flex;
+      align-items: flex-start;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 0 1.5rem 0;
+      padding: .8rem;
+      line-height: 0; }
+      .pricing-cards .pricing-card ul li {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: 0.9rem; }
+        .pricing-cards .pricing-card ul li img {
+          margin: 0 .5rem; }
+    .pricing-cards .pricing-card .pricing-svg {
+      width: 300px;
+      margin: 0 auto; }
+
+/* Mediaqueries */
+@media (min-width: 1200px) {
+  body #main-services .pricing-container .pricing-titles {
+    width: 600px; }
+  body #main-services .pricing-container .pricing-card {
+    padding: 0 2rem 2rem 2rem; }
+    body #main-services .pricing-container .pricing-card h3, body #main-services .pricing-container .pricing-card h4 {
+      font-size: 1.5rem;
+      padding: 1rem 2rem; }
+    body #main-services .pricing-container .pricing-card h4 {
+      padding: 0;
+      color: #444; }
+    body #main-services .pricing-container .pricing-card ul li {
+      font-size: 1.15rem; }
+  body #main-services .pricing-container .pricing-titles {
+    width: 1000px; }
+  body #main-services .pricing-container h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem; }
+  body #main-services .pricing-container p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.15rem; } }
+@media (min-width: 768px) {
+  #main-services .pricing-container .pricing-titles {
+    width: 600px; }
+  #main-services .pricing-container .pricing-card h3, #main-services .pricing-container .pricing-card h4 {
+    font-size: 1.15rem; }
+  #main-services .pricing-container .pricing-card ul li {
+    font-size: 1rem; }
+  #main-services .pricing-container h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem; }
+  #main-services .pricing-container p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem; } }
 @media (min-width: 768px) {
   /* main image */
   .main-image {
@@ -689,6 +865,9 @@ label {
   .main-image {
     height: 700px; }
 
+  .secondary-pages {
+    height: 500px; }
+
   .main {
     max-width: 900px; }
 
@@ -743,7 +922,11 @@ label {
         right: 0;
         bottom: 0;
         top: 0;
-        margin: auto; }
+        margin: auto;
+        transition: transform .2s ease-in-out; }
+      .proyects .container-proyects .cards .proyect-card img:hover {
+        transition: transform .2s ease-out;
+        transform: translateY(-1rem); }
 
   .footer .footer-container {
     flex-direction: row;
@@ -777,6 +960,9 @@ label {
 
   .main-image {
     height: 700px; }
+
+  .secondary-pages {
+    height: 500px; }
 
   .main {
     max-width: 1200px; }
@@ -846,7 +1032,11 @@ label {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
-  transition: transform .8s ease, opacity .6s ease; }
+  transition: transform .8s ease, opacity .6s ease;
+  -webkit-transition: transform .8s ease, opacity .6s ease;
+  -moz-transition: transform .8s ease, opacity .6s ease;
+  -ms-transition: transform .8s ease, opacity .6s ease;
+  -o-transition: transform .8s ease, opacity .6s ease; }
 
 .hidden-desktop {
   opacity: 0;

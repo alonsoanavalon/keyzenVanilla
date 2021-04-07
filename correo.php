@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $mensaje = $_POST['mensaje'];
     
-    $destinatario = "contacto@keyzen.cl";
+    $destinatario = "alonso.anavalon@gmail.com";
     
     $carta = "De: $nombre \n";
     $carta .= "Correo: $email \n";

@@ -13,10 +13,7 @@ export default function showUpNotebook (hidden, show, element) {
         if (elementTop < windowHeight) {
             $element.classList.remove(hidden)
             $element.classList.add(show) 
-        }/*  else {
-            $element.classList.add(hidden)
-            $element.classList.remove(show) 
-        } */
+        }
     })
     
 

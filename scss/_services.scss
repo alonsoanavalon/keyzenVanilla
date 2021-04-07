@@ -1,0 +1,243 @@
+#main-services {
+    max-width:1900px;
+    width:90%;
+
+    #contacto {
+        max-width:1100px;
+    }
+}
+.pricing-container {
+    background: #fafafa;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.25);
+    padding:5rem 0 10rem 0;
+    margin:4rem 0;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+
+    .pricing-titles{
+        width:300px; 
+        margin:5rem auto;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: $poppins;
+        font-size: $title-size;
+        
+    }
+
+    p {
+        font-family: $poppins;
+        font-size: $font-size;
+        line-height:2rem;
+    }
+
+    .pricing-contact {
+        text-decoration: none;
+        background-color: $purple-color;
+        display: block;
+        width:100px;
+        margin:0 auto;
+        margin-bottom: 4rem;
+        color:$white-color;
+        padding:.5rem 1rem;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+}
+}
+
+.pricing-cards {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    font-family: $poppins;
+
+    .list-ticket {
+        list-style: none;
+        line-height: 3rem;
+        img {
+            width:20px;
+        }
+    }
+
+    .list-star {
+        list-style: none;
+        line-height:3rem;
+        img {
+            width:20px;
+        }
+    }
+
+    .ecommerce {
+        h3 {
+            border-bottom:3px solid #0071BC;
+        }
+    }
+    .ecommerce-pro {
+        h3 {
+            border-bottom:3px solid #9947FF;
+        }
+    }
+    .informative {
+        h3 {
+            border-bottom:3px solid #68E1FD;
+        }        
+    }
+    .pricing-card {
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.45);
+        background-color: $white-color;
+        padding-bottom:1.5rem;
+        border-radius:.5rem ;
+        -webkit-border-radius:.5rem ;
+        -moz-border-radius:.5rem ;
+        -ms-border-radius:.5rem ;
+        -o-border-radius:.5rem ;
+
+            h3 {
+                padding:1rem 0;
+                color:#333;
+            }
+
+            
+
+        
+
+            ul {
+            display: flex;
+            align-items: flex-start;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            margin:0 0 1.5rem 0;
+            padding:.8rem;
+            line-height: 0;
+            
+            li {
+                
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                font-size: $font-size;
+
+                img {
+                    margin: 0 .5rem;
+                }
+            }
+        }
+
+        .pricing-svg {
+            width:300px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+/* Mediaqueries */
+
+@media (min-width: 1200px) {
+
+    body {
+        #main-services {
+
+            .pricing-container {
+
+                .pricing-titles {
+                    width:600px; 
+        
+                }
+    
+                .pricing-card {
+
+                    padding:0 2rem 2rem 2rem;
+        
+                    h3, h4 {
+                        font-size: $subtitle-desktop;
+                        padding:1rem 2rem;
+                    }
+                    h4 {
+                        padding:0;
+                        color:#444;
+                    }
+    
+                    ul {
+    
+                        li {
+                            font-size: $font-desktop;
+                        }
+                    }
+                }
+        
+                .pricing-titles {
+                    width:1000px; 
+        
+                }
+                h2 {
+                    font-family: $poppins;
+                    font-size: $title-desktop;
+                    
+                }
+            
+                p {
+                    font-family: $poppins;
+                    font-size: $font-desktop;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    #main-services {
+
+        .pricing-container {
+            .pricing-titles {
+                width:600px; 
+    
+            }
+
+            .pricing-card {
+                h3, h4 {
+                    font-size: $subtitle-tablet;
+                }
+
+                ul {
+
+                    li {
+                        font-size: $font-tablet;
+                    }
+                }
+            }
+            h2 {
+                font-family: $poppins;
+                font-size: $title-tablet;
+                
+            }
+        
+            p {
+                font-family: $poppins;
+                font-size: $font-tablet;
+            }
+        }
+    }
+}
